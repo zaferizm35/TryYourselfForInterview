@@ -1,8 +1,14 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.stream.Collectors;
+
 public class Triangle1 {
     public static void main(String[] args) {
-        for (int i = 0; i < 5; i++) {
-            System.out.print(" ".repeat(i));
-            System.out.print( "x".repeat(i));
-        }
+        String str="zafer arasan ne zaman adam olacak";
+        String[] arr= str.split(" ");
+
+        Arrays.stream(arr).filter(p->p.contains("e")).forEach(System.out::println);
+
+
     }
 }
